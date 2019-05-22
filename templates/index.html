@@ -1,17 +1,82 @@
-<!doctype html>
-<link rel="stylesheet" href="/static/das.css" type="text/css">
-<title>Drew Abbott</title>
-<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-<head>
-</head>
-<body>
-  <div id="footer">
-    <div id="footer-left">
-      [ <a href="foo">Foo</a> ] [ <a href="bar">bar</a> ]
-    </div>
-    <div id="footer-right" >
-      <div id="helptext">
-        [ a site about drew abbott, i guess ]
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <title>CSS-Only Responsive Layout with Smooth Transitions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="CSS-only Responsive Layout with Smooth Transitions" />
+    <meta name="keywords" content="css3, transitions, animations, css-only, navigation, smooth scrolling, full width, full height, window width, window height" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="static/favicon.ico"> 
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="static/css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <script type="text/javascript" src="static/js/modernizr.custom.79639.js"></script> 
+    <!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/simple.css" />
+	<![endif]-->
+  </head>
+    <body>
+      <div class="container">	
+        <div class="codrops-top">
+          <a href="https://drew.abbotts.site/">
+            <strong>&laquo; Previous Page: </strong>Something before this
+          </a>
+          <span class="right">
+            <a href="https://drew.abbotts.site/">
+              <strong>This is some other link</strong>
+            </a>
+          </span>
+          <div class="clr"></div>
+        </div>
+	
+	<div class="st-container">
+	  <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
+	  <a href="#st-panel-1">Resume</a>
+	  <input type="radio" name="radio-set" id="st-control-2"/>
+	  <a href="#st-panel-2">Projects</a>
+	  <input type="radio" name="radio-set" id="st-control-3"/>
+	  <a href="#st-panel-3">Blog</a>
+	  <input type="radio" name="radio-set" id="st-control-4"/>
+	  <a href="#st-panel-4">Photos</a>
+	  <input type="radio" name="radio-set" id="st-control-5"/>
+	  <a href="#st-panel-5">Contact</a>
+	  
+	  <div class="st-scroll">
+	    <section class="st-panel" id="st-panel-1">
+	      <div class="st-deco" data-icon="H"></div>
+	      <h2>Resume</h2>
+	      <p>This will be my front page resume-styled 'About Me' page.</p>
+	    </section>
+
+	    <section class="st-panel st-color" id="st-panel-2">
+	      <div class="st-deco" data-icon="2"></div>
+	      <h2>Projects</h2>
+	      <p>This will be a list of all the things I've worked on and appropriate links to everything</p>
+	    </section>
+
+	    <section class="st-panel" id="st-panel-3">
+	      <div class="st-deco" data-icon="B"></div>
+	      <h2>Blog</h2>
+	      <p>This is going to be wordpress/Jekyll and will have posts about random CS/EE endeavors</p>
+	    </section>
+
+	    <section class="st-panel st-color" id="st-panel-4">
+	      <div class="st-deco" data-icon="x"></div>
+	      <h2>Photos</h2>
+	      <p>This is going to be my camera roll either hotlinked from flickr or hosted locally
+	      Maybe use something <a href="https://www.alessioatzeni.com/CSS3-Cycle-Image-Slider/">like this</a></p>
+	    </section>
+
+	    <section class="st-panel" id="st-panel-5">
+	      <div class="st-deco" data-icon="Ç"></div>
+	      <h2>Contact</h2>
+	      <p>This is going to have info about me and how to contact me</p>
+	    </section>
+
+	  </div><!-- // st-scroll -->	  
+	</div><!-- // st-container -->
       </div>
-    </div>
-</body>
+    </body>
+</html>
