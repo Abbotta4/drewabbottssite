@@ -4,7 +4,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	font-family: 'Josefin Slab', 'Myriad Pro', Arial, sans-serif;
+	font-family: 'Lora', 'Myriad Pro', Arial, sans-serif;
 }
 
 .st-container > input,
@@ -173,7 +173,7 @@
 
 [data-icon]:after {
     content: attr(data-icon);
-    font-family: 'RaphaelIcons';
+    font-family: 'FoundationIcons';
     color: #fff;
 	text-shadow: 1px 1px 1px rgba(105,105,105,0.2);
 	position: absolute;
