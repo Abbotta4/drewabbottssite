@@ -7,19 +7,25 @@
     font-family: 'Fredoka One', cursive;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e3138;
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #2e3138;
+    min-width: 50vw;
 }
 
 ul {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2vh;
 }
 
 ul li {
@@ -29,10 +35,10 @@ ul li {
 
 ul li a {
     position: relative;
-    font-size: 5em;
+    font-size: 6vh;
     font-weight: bold;
     text-decoration: none;
-    line-height: 1em;
+    line-height: 5vh;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: transparent;
@@ -50,7 +56,7 @@ ul li a::before {
 ul li a:hover::before {
     -webkit-animation: fadeIn 0.5s;
     -webkit-text-stroke: 1px var(--color);
-    filter: drop-shadow(0 0 25px var(--color));
+    filter: drop-shadow(0 0 1vh var(--color));
     opacity: 1;
 }
 
